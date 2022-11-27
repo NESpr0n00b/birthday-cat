@@ -2,10 +2,11 @@ const count = document.getElementById('count');
 const head = document.getElementById('head');
 const giftbox = document.getElementById('merrywrap');
 const canvasC = document.getElementById('c');
+const vidlink = document.getElementById('linker');
 
 const config = {
-  birthdate: 'Oct 31, 2022',
-  name: 'Cherry'
+  birthdate: 'Nov 28, 2022',
+  name: 'Catherine'
 };
 
 function hideEverything() {
@@ -13,6 +14,7 @@ function hideEverything() {
   count.style.display = 'none';
   giftbox.style.display = 'none';
   canvasC.style.display = 'none';
+  vidlink.style.display = 'none';
 }
 
 hideEverything();
@@ -464,6 +466,7 @@ x = setInterval(function() {
     function init() {
       box.addEventListener('click', openBox, false);
       box.addEventListener('click', showfireworks, false);
+      box.addEventListener('click', showlink, false);
     }
 
     function stepClass(step) {
@@ -484,6 +487,11 @@ x = setInterval(function() {
       setTimeout(openBox, stepMinutes[step - 1]);
       step++;
       //   setTimeout(anim, 1900);
+    }
+
+    function showlink() {
+      vidlink.style.display = 'initial';
+
     }
 
     function showfireworks() {

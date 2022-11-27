@@ -180,3 +180,22 @@ li span {
       opacity: 0;
  }
 }
+
+.thelink {
+  opacity: 0;
+  position:absolute;
+  bottom: 50px;
+  width: 100%; 
+  text-align: center;
+  animation: 2s ease-in 10s appearnow forwards;
+}
+
+@keyframes appearnow {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
